@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f4228f0d375, pid=17169, tid=17188
+#
+# JRE version: OpenJDK Runtime Environment (15.0.2+7) (build 15.0.2+7-27)
+# Java VM: OpenJDK 64-Bit Server VM (15.0.2+7-27, mixed mode, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x4375]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x65
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/neres/Documents/workspace-spring-tool-suite-4-4.10.0.RELEASE/anpe-backend/core.17169)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:+ShowCodeDetailsInExceptionMessages -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:35323 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=41631 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.jmx.enabled=true -Dspring.application.admin.enabled=true -Djava.security.egd=file:/dev/./urandom -XX:TieredStopAtLevel=1 -Dspring.boot.project.name=anpe-backend -javaagent:/home/neres/Documentos/Sping Tools-4.10.0.RELEASE/configuration/org.eclipse.osgi/248/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 com.anpe.AnpeBackendApplication --spring.output.ansi.enabled=always
+
+Host: Intel(R) Core(TM) i7 CPU         930  @ 2.80GHz, 8 cores, 7G, 
